@@ -1,0 +1,3174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HK Carwash | Premium Car Care & Detailing</title>
+
+<meta name="description"
+content="HK Carwash - Premium car washing, detailing, polishing and interior cleaning services.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/* =====================================================
+   PREMIUM BLACK & GOLD THEME
+===================================================== */
+
+:root{
+    --primary:#D4AF37;
+    --secondary:#B8860B;
+    --gold-light:#F5D76E;
+
+    --dark:#080808;
+    --dark2:#101010;
+    --dark3:#151515;
+
+    --card:#171717;
+
+    --text:#F8F5ED;
+    --muted:#A7A7A7;
+    --white:#ffffff;
+
+    --green:#25D366;
+
+    --gradient:linear-gradient(135deg,#F5D76E,#D4AF37,#A67C00);
+
+    --glass:rgba(255,255,255,0.045);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:var(--dark);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title span{
+    color:var(--primary);
+    font-weight:800;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:13px;
+}
+
+.section-title h2{
+    font-family:"Poppins",sans-serif;
+    font-size:42px;
+    margin-top:12px;
+    color:var(--text);
+}
+
+.section-title p{
+    color:var(--muted);
+    max-width:650px;
+    margin:15px auto 0;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 27px;
+    border-radius:50px;
+
+    background:var(--gradient);
+
+    color:#080808;
+    font-weight:800;
+
+    border:none;
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(212,175,55,.15);
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 40px rgba(212,175,55,.3);
+}
+
+.btn-outline{
+    background:transparent;
+    color:var(--text);
+    border:1px solid rgba(212,175,55,.5);
+    box-shadow:none;
+}
+
+.btn-outline:hover{
+    background:rgba(212,175,55,.08);
+    color:var(--gold-light);
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:999;
+    transition:.3s;
+}
+
+header.scrolled{
+    background:rgba(8,8,8,.94);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(212,175,55,.15);
+}
+
+.navbar{
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:11px;
+
+    font-family:"Poppins",sans-serif;
+    font-weight:900;
+    font-size:22px;
+}
+
+.logo-icon{
+    width:43px;
+    height:43px;
+
+    border-radius:12px;
+
+    background:var(--gradient);
+
+    display:grid;
+    place-items:center;
+
+    color:#080808;
+
+    font-size:20px;
+
+    box-shadow:
+    0 8px 25px rgba(212,175,55,.25);
+}
+
+.logo span{
+    color:var(--primary);
+}
+
+
+/* NAV LINKS */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:32px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#dedbd2;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--gold-light);
+}
+
+.menu-btn{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+    color:var(--gold-light);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(5,5,5,.97) 0%,
+        rgba(5,5,5,.83) 45%,
+        rgba(5,5,5,.40) 100%
+    ),
+
+    url("https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=2000&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#D4AF37;
+
+    filter:blur(190px);
+
+    opacity:.10;
+
+    right:-150px;
+    bottom:-200px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    max-width:750px;
+
+    padding-top:70px;
+}
+
+.hero-badge{
+    display:inline-flex;
+    gap:10px;
+    align-items:center;
+
+    padding:9px 15px;
+
+    border:1px solid rgba(212,175,55,.4);
+
+    background:rgba(212,175,55,.07);
+
+    border-radius:50px;
+
+    color:var(--gold-light);
+
+    font-size:12px;
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    animation:fadeUp .8s ease;
+}
+
+.hero h1{
+    font-family:"Poppins",sans-serif;
+
+    font-size:clamp(45px,7vw,82px);
+
+    line-height:1.03;
+
+    font-weight:900;
+
+    letter-spacing:-3px;
+
+    color:#fff;
+
+    animation:fadeUp 1s ease;
+}
+
+.hero h1 .blue{
+    color:var(--primary);
+
+    background:
+    linear-gradient(
+        90deg,
+        #F5D76E,
+        #D4AF37,
+        #B8860B
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-subtitle{
+    font-size:20px;
+
+    color:#c8c5bc;
+
+    line-height:1.7;
+
+    margin:25px 0 35px;
+
+    max-width:620px;
+
+    animation:fadeUp 1.2s ease;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+
+    animation:fadeUp 1.4s ease;
+}
+
+.hero-stats{
+    display:flex;
+    gap:45px;
+
+    margin-top:55px;
+
+    animation:fadeUp 1.6s ease;
+}
+
+.stat strong{
+    display:block;
+
+    font-size:28px;
+
+    color:var(--gold-light);
+}
+
+.stat span{
+    font-size:12px;
+
+    color:var(--muted);
+}
+
+.scroll-down{
+    position:absolute;
+
+    bottom:30px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:3;
+
+    color:#999;
+
+    font-size:13px;
+}
+
+.scroll-down i{
+    display:block;
+
+    text-align:center;
+
+    margin-top:8px;
+
+    color:var(--gold-light);
+
+    animation:bounce 1.5s infinite;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services{
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(212,175,55,.06),
+        transparent 35%
+    ),
+    var(--dark2);
+}
+
+.service-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+}
+
+.service-card{
+    position:relative;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    background:var(--glass);
+
+    border:1px solid rgba(212,175,55,.10);
+
+    overflow:hidden;
+
+    transition:.4s;
+}
+
+.service-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:0;
+    height:2px;
+
+    background:var(--gradient);
+
+    transition:.4s;
+}
+
+.service-card:hover::before{
+    width:100%;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+
+    border-color:rgba(212,175,55,.35);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.4);
+}
+
+.service-icon{
+    width:60px;
+    height:60px;
+
+    border-radius:17px;
+
+    background:rgba(212,175,55,.09);
+
+    color:var(--gold-light);
+
+    display:grid;
+    place-items:center;
+
+    font-size:24px;
+
+    margin-bottom:25px;
+
+    border:1px solid rgba(212,175,55,.15);
+}
+
+.service-card h3{
+    font-size:21px;
+    margin-bottom:13px;
+}
+
+.service-card p{
+    color:var(--muted);
+
+    line-height:1.7;
+
+    font-size:14px;
+}
+
+.service-price{
+    display:block;
+
+    margin-top:25px;
+
+    color:var(--gold-light);
+
+    font-weight:800;
+
+    font-size:18px;
+}
+
+
+/* =====================================================
+   WHY US
+===================================================== */
+
+.why-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.why-image{
+    position:relative;
+}
+
+.why-image img{
+    height:540px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    filter:saturate(.8);
+}
+
+.why-image::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:25px;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    pointer-events:none;
+}
+
+.image-badge{
+    position:absolute;
+
+    right:-25px;
+    bottom:30px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:rgba(10,10,10,.93);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(212,175,55,.25);
+}
+
+.image-badge strong{
+    display:block;
+
+    font-size:28px;
+
+    color:var(--gold-light);
+}
+
+.why-content h2{
+    font-family:"Poppins",sans-serif;
+
+    font-size:43px;
+
+    line-height:1.15;
+
+    margin:15px 0 20px;
+}
+
+.why-content>p{
+    color:var(--muted);
+
+    line-height:1.8;
+}
+
+.feature{
+    display:flex;
+
+    gap:18px;
+
+    margin-top:28px;
+}
+
+.feature-icon{
+    min-width:48px;
+    height:48px;
+
+    border-radius:14px;
+
+    background:rgba(212,175,55,.09);
+
+    color:var(--gold-light);
+
+    display:grid;
+    place-items:center;
+
+    border:1px solid rgba(212,175,55,.15);
+}
+
+.feature h4{
+    margin-bottom:6px;
+}
+
+.feature p{
+    color:var(--muted);
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+.products{
+    background:var(--dark2);
+}
+
+.product-grid{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+}
+
+.product-card{
+    background:#111;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(212,175,55,.10);
+
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-7px);
+
+    border-color:rgba(212,175,55,.35);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.product-img{
+    height:200px;
+
+    overflow:hidden;
+}
+
+.product-img img{
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.08);
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    font-size:17px;
+}
+
+.product-info p{
+    color:var(--muted);
+
+    font-size:12px;
+
+    margin:8px 0;
+}
+
+.product-price{
+    color:var(--gold-light);
+
+    font-weight:800;
+}
+
+
+/* =====================================================
+   REVIEWS
+===================================================== */
+
+.review-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+}
+
+.review-card{
+    padding:30px;
+
+    border-radius:22px;
+
+    background:var(--glass);
+
+    border:1px solid rgba(212,175,55,.10);
+
+    transition:.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-7px);
+
+    border-color:rgba(212,175,55,.3);
+}
+
+.stars{
+    color:#F5C542;
+
+    margin-bottom:18px;
+
+    letter-spacing:2px;
+}
+
+.review-card p{
+    color:#c7c4bc;
+
+    line-height:1.8;
+
+    font-size:14px;
+}
+
+.reviewer{
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    margin-top:25px;
+}
+
+.avatar{
+    width:43px;
+    height:43px;
+
+    border-radius:50%;
+
+    background:var(--gradient);
+
+    display:grid;
+    place-items:center;
+
+    color:#080808;
+
+    font-weight:800;
+}
+
+.reviewer strong{
+    font-size:14px;
+}
+
+.reviewer small{
+    display:block;
+
+    color:var(--muted);
+
+    margin-top:3px;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta{
+    padding:80px 0;
+}
+
+.cta-box{
+    position:relative;
+
+    overflow:hidden;
+
+    padding:70px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+        110deg,
+        rgba(30,24,8,.95),
+        rgba(125,91,10,.82)
+    ),
+    url("https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+    border:1px solid rgba(245,215,110,.25);
+
+    box-shadow:0 20px 70px rgba(0,0,0,.4);
+}
+
+.cta-box h2{
+    font-family:"Poppins",sans-serif;
+
+    font-size:45px;
+
+    margin-bottom:15px;
+}
+
+.cta-box p{
+    max-width:600px;
+
+    margin:0 auto 25px;
+
+    color:#e8e3d5;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+    background:
+    radial-gradient(
+        circle at bottom left,
+        rgba(212,175,55,.05),
+        transparent 30%
+    ),
+    var(--dark2);
+}
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:.8fr 1.2fr;
+
+    gap:60px;
+}
+
+.contact-info h2{
+    font-family:"Poppins",sans-serif;
+
+    font-size:40px;
+
+    margin:15px 0;
+}
+
+.contact-info>p{
+    color:var(--muted);
+
+    line-height:1.8;
+}
+
+.contact-item{
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.contact-item i{
+    width:45px;
+    height:45px;
+
+    border-radius:13px;
+
+    background:rgba(212,175,55,.09);
+
+    color:var(--gold-light);
+
+    display:grid;
+    place-items:center;
+
+    border:1px solid rgba(212,175,55,.15);
+}
+
+.contact-item strong{
+    display:block;
+
+    margin-bottom:4px;
+}
+
+.contact-item span{
+    color:var(--muted);
+
+    font-size:13px;
+}
+
+.contact-form{
+    padding:35px;
+
+    border-radius:24px;
+
+    background:var(--glass);
+
+    border:1px solid rgba(212,175,55,.12);
+}
+
+.form-row{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+}
+
+.input-group{
+    margin-bottom:17px;
+}
+
+.input-group label{
+    display:block;
+
+    font-size:12px;
+
+    margin-bottom:7px;
+
+    color:#c9c5ba;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:#0a0a0a;
+
+    color:white;
+
+    border:1px solid rgba(212,175,55,.12);
+
+    padding:14px 15px;
+
+    border-radius:12px;
+
+    font-family:inherit;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+    border-color:rgba(212,175,55,.6);
+
+    box-shadow:
+    0 0 0 3px rgba(212,175,55,.06);
+}
+
+.input-group textarea{
+    min-height:130px;
+
+    resize:vertical;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    background:
+    radial-gradient(
+        circle at top center,
+        rgba(212,175,55,.07),
+        transparent 40%
+    ),
+    #050505;
+
+    padding:65px 0 25px;
+
+    border-top:1px solid rgba(212,175,55,.12);
+}
+
+.footer-grid{
+    display:grid;
+
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
+
+    gap:40px;
+}
+
+.footer-brand p{
+    color:var(--muted);
+
+    line-height:1.7;
+
+    margin:20px 0;
+
+    max-width:330px;
+
+    font-size:14px;
+}
+
+.socials{
+    display:flex;
+
+    gap:10px;
+}
+
+.socials a{
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    display:grid;
+    place-items:center;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(212,175,55,.12);
+
+    transition:.3s;
+}
+
+.socials a:hover{
+    background:var(--gradient);
+
+    color:#080808;
+
+    transform:translateY(-4px);
+}
+
+.footer-col h4{
+    margin-bottom:20px;
+
+    color:#eee8da;
+}
+
+.footer-col a{
+    display:block;
+
+    color:var(--muted);
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+}
+
+.footer-col a:hover{
+    color:var(--gold-light);
+
+    padding-left:5px;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.06);
+
+    margin-top:50px;
+
+    padding-top:20px;
+
+    color:#686868;
+
+    text-align:center;
+
+    font-size:12px;
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+.whatsapp{
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--green);
+
+    color:white;
+
+    display:grid;
+    place-items:center;
+
+    font-size:28px;
+
+    z-index:900;
+
+    box-shadow:
+    0 10px 30px rgba(37,211,102,.25);
+
+    animation:pulse 2s infinite;
+}
+
+.whatsapp-tooltip{
+    position:absolute;
+
+    right:70px;
+
+    white-space:nowrap;
+
+    background:#161616;
+
+    padding:8px 12px;
+
+    border-radius:8px;
+
+    font-size:11px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+    border:1px solid rgba(212,175,55,.15);
+}
+
+.whatsapp:hover .whatsapp-tooltip{
+    opacity:1;
+}
+
+
+/* =====================================================
+   CHATBOT
+===================================================== */
+
+.chat-button{
+    position:fixed;
+
+    right:25px;
+    bottom:100px;
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    background:var(--gradient);
+
+    color:#080808;
+
+    display:grid;
+    place-items:center;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    z-index:899;
+
+    box-shadow:
+    0 10px 30px rgba(212,175,55,.25);
+}
+
+.chat-box{
+    position:fixed;
+
+    right:25px;
+    bottom:170px;
+
+    width:350px;
+
+    max-width:calc(100% - 30px);
+
+    background:#101010;
+
+    border:1px solid rgba(212,175,55,.2);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    z-index:898;
+
+    box-shadow:
+    0 20px 70px rgba(0,0,0,.6);
+
+    display:none;
+}
+
+.chat-box.active{
+    display:block;
+
+    animation:chatIn .3s ease;
+}
+
+.chat-header{
+    padding:18px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #F5D76E,
+        #D4AF37,
+        #A67C00
+    );
+
+    color:#080808;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+}
+
+.chat-header strong{
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.chat-close{
+    cursor:pointer;
+}
+
+.chat-messages{
+    height:280px;
+
+    padding:15px;
+
+    overflow-y:auto;
+}
+
+.message{
+    max-width:85%;
+
+    padding:10px 13px;
+
+    border-radius:12px;
+
+    margin-bottom:10px;
+
+    font-size:12px;
+
+    line-height:1.5;
+}
+
+.bot{
+    background:#1b1b1b;
+
+    border:1px solid rgba(212,175,55,.08);
+}
+
+.user{
+    background:#9c7814;
+
+    color:#fff;
+
+    margin-left:auto;
+}
+
+.chat-input{
+    display:flex;
+
+    padding:10px;
+
+    border-top:1px solid rgba(212,175,55,.1);
+}
+
+.chat-input input{
+    flex:1;
+
+    background:transparent;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    padding:10px;
+}
+
+.chat-input button{
+    width:40px;
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--gradient);
+
+    color:#080808;
+
+    cursor:pointer;
+}
+
+
+/* =====================================================
+   SCROLL ANIMATION
+===================================================== */
+
+.reveal{
+    opacity:0;
+
+    transform:translateY(35px);
+
+    transition:all .8s ease;
+}
+
+.reveal.show{
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0)
+    }
+
+    50%{
+        transform:translateY(8px)
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+        box-shadow:
+        0 0 0 0 rgba(37,211,102,.5)
+    }
+
+    70%{
+        box-shadow:
+        0 0 0 15px rgba(37,211,102,0)
+    }
+
+    100%{
+        box-shadow:
+        0 0 0 0 rgba(37,211,102,0)
+    }
+
+}
+
+@keyframes chatIn{
+
+    from{
+        opacity:0;
+
+        transform:
+        translateY(20px)
+        scale(.95);
+    }
+
+    to{
+        opacity:1;
+
+        transform:
+        translateY(0)
+        scale(1);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px){
+
+    .nav-links{
+        position:absolute;
+
+        top:80px;
+        left:0;
+
+        width:100%;
+
+        background:#080808;
+
+        flex-direction:column;
+
+        padding:25px;
+
+        display:none;
+
+        border-bottom:1px solid rgba(212,175,55,.15);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .service-grid,
+    .review-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-image img{
+        height:450px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    section{
+        padding:75px 0;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+
+    .hero h1{
+        font-size:48px;
+
+        letter-spacing:-2px;
+    }
+
+    .hero-subtitle{
+        font-size:16px;
+    }
+
+    .hero-stats{
+        gap:22px;
+    }
+
+    .stat strong{
+        font-size:22px;
+    }
+
+    .service-grid,
+    .review-grid,
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-content h2{
+        font-size:32px;
+    }
+
+    .why-image img{
+        height:350px;
+    }
+
+    .image-badge{
+        right:10px;
+    }
+
+    .cta-box{
+        padding:45px 20px;
+    }
+
+    .cta-box h2{
+        font-size:32px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form{
+        padding:22px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .whatsapp{
+        right:18px;
+        bottom:18px;
+    }
+
+    .chat-button{
+        right:18px;
+        bottom:88px;
+    }
+
+    .chat-box{
+        right:15px;
+        bottom:155px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header id="header">
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+
+<div class="logo-icon">
+<i class="fa-solid fa-car-side"></i>
+</div>
+
+HK <span>CARWASH</span>
+
+</a>
+
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#why">Why Us</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+
+<i class="fa-solid fa-sparkles"></i>
+
+PREMIUM AUTO CARE
+
+</div>
+
+
+<h1>
+
+Your Car.<br>
+
+<span class="blue">
+Our Passion.
+</span>
+
+</h1>
+
+
+<p class="hero-subtitle">
+
+Professional car washing, detailing and protection services
+designed to make your vehicle look fresh, clean and showroom ready.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn">
+
+Book A Wash
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+
+<a href="#services" class="btn btn-outline">
+
+Explore Services
+
+</a>
+
+</div>
+
+
+<div class="hero-stats">
+
+<div class="stat">
+
+<strong>2K+</strong>
+
+<span>Cars Washed</span>
+
+</div>
+
+
+<div class="stat">
+
+<strong>4.9★</strong>
+
+<span>Customer Rating</span>
+
+</div>
+
+
+<div class="stat">
+
+<strong>100%</strong>
+
+<span>Care Guaranteed</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="scroll-down">
+
+Scroll to explore
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<span>What We Do</span>
+
+<h2>Premium Car Care Services</h2>
+
+<p>
+
+From a quick exterior wash to complete detailing,
+we take care of every part of your vehicle.
+
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<div class="service-card reveal">
+
+<div class="service-icon">
+
+<i class="fa-solid fa-droplet"></i>
+
+</div>
+
+<h3>Premium Car Wash</h3>
+
+<p>
+
+Foam wash, careful rinsing and microfiber drying
+for a clean and fresh exterior.
+
+</p>
+
+<span class="service-price">
+
+From PKR 1,000
+
+</span>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="service-icon">
+
+<i class="fa-solid fa-spray-can-sparkles"></i>
+
+</div>
+
+<h3>Full Detailing</h3>
+
+<p>
+
+Deep interior and exterior cleaning to restore
+your vehicle's fresh appearance.
+
+</p>
+
+<span class="service-price">
+
+From PKR 3,500
+
+</span>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="service-icon">
+
+<i class="fa-solid fa-gem"></i>
+
+</div>
+
+<h3>Polishing & Wax</h3>
+
+<p>
+
+Bring back your vehicle's shine with professional
+polishing and protective wax.
+
+</p>
+
+<span class="service-price">
+
+From PKR 2,500
+
+</span>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="service-icon">
+
+<i class="fa-solid fa-couch"></i>
+
+</div>
+
+<h3>Interior Cleaning</h3>
+
+<p>
+
+Seats, carpets, dashboard and interior surfaces
+cleaned with professional products.
+
+</p>
+
+<span class="service-price">
+
+From PKR 2,000
+
+</span>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="service-icon">
+
+<i class="fa-solid fa-circle"></i>
+
+</div>
+
+<h3>Wheel & Tyre Care</h3>
+
+<p>
+
+Deep wheel cleaning and tyre dressing for a
+complete finishing touch.
+
+</p>
+
+<span class="service-price">
+
+From PKR 800
+
+</span>
+
+</div>
+
+
+<div class="service-card reveal">
+
+<div class="service-icon">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+</div>
+
+<h3>Paint Protection</h3>
+
+<p>
+
+Protect your vehicle's exterior and maintain
+that glossy finish for longer.
+
+</p>
+
+<span class="service-price">
+
+Get a Quote
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY US
+===================================================== -->
+
+<section id="why">
+
+<div class="container">
+
+<div class="why-grid">
+
+
+<div class="why-image reveal">
+
+<img
+src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1000&q=85"
+alt="Professional car wash">
+
+<div class="image-badge">
+
+<strong>4.9/5</strong>
+
+Customer Rating
+
+</div>
+
+</div>
+
+
+<div class="why-content reveal">
+
+<span style="
+color:#D4AF37;
+font-size:13px;
+font-weight:800;
+letter-spacing:2px;
+">
+
+WHY HK CARWASH
+
+</span>
+
+
+<h2>
+
+More Than A Wash.<br>
+
+It's <span style="color:#D4AF37">
+Car Care.
+</span>
+
+</h2>
+
+
+<p>
+
+At HK Carwash, we believe your vehicle deserves more than
+a basic rinse. Our team focuses on quality, attention to detail
+and a premium customer experience.
+
+</p>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-user-check"></i>
+
+</div>
+
+
+<div>
+
+<h4>Trained Professionals</h4>
+
+<p>
+
+Our team handles your vehicle with care and attention.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-flask"></i>
+
+</div>
+
+
+<div>
+
+<h4>Premium Products</h4>
+
+<p>
+
+We use quality cleaning products for excellent results.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-clock"></i>
+
+</div>
+
+
+<div>
+
+<h4>Fast & Convenient</h4>
+
+<p>
+
+Professional service without unnecessary waiting.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div style="margin-top:30px">
+
+<a href="#contact" class="btn">
+
+Book Your Car
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<span>Premium Products</span>
+
+<h2>Products We Trust</h2>
+
+<p>
+
+Quality products help us deliver a better finish
+and better protection for your vehicle.
+
+</p>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<div class="product-card reveal">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=80"
+alt="Car care">
+
+</div>
+
+
+<div class="product-info">
+
+<h3>Premium Car Shampoo</h3>
+
+<p>Gentle cleaning formula</p>
+
+<span class="product-price">
+Professional Grade
+</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card reveal">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=800&q=80"
+alt="Car cleaning">
+
+</div>
+
+
+<div class="product-info">
+
+<h3>Microfiber Towels</h3>
+
+<p>Paint-safe drying</p>
+
+<span class="product-price">
+Premium Quality
+</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card reveal">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1597007066704-67bf2068d5b7?auto=format&fit=crop&w=800&q=80"
+alt="Car detailing">
+
+</div>
+
+
+<div class="product-info">
+
+<h3>Interior Cleaner</h3>
+
+<p>Deep interior cleaning</p>
+
+<span class="product-price">
+Professional Grade
+</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card reveal">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80"
+alt="Car detailing">
+
+</div>
+
+
+<div class="product-info">
+
+<h3>Car Wax</h3>
+
+<p>Gloss & protection</p>
+
+<span class="product-price">
+Long Lasting
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     REVIEWS
+===================================================== -->
+
+<section id="reviews">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<span>Customer Love</span>
+
+<h2>What Our Customers Say</h2>
+
+<p>
+
+Real experiences from customers who trust HK Carwash
+with their vehicles.
+
+</p>
+
+</div>
+
+
+<div class="review-grid">
+
+
+<div class="review-card reveal">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+
+"Excellent service! My car looked completely different
+after the detailing. The team really paid attention to
+the small details."
+
+</p>
+
+
+<div class="reviewer">
+
+<div class="avatar">A</div>
+
+<div>
+
+<strong>Ahmed Khan</strong>
+
+<small>Regular Customer</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="review-card reveal">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+
+"Very professional and friendly staff. The exterior shine
+was amazing and the whole process was smooth."
+
+</p>
+
+
+<div class="reviewer">
+
+<div class="avatar">M</div>
+
+<div>
+
+<strong>Muhammad Ali</strong>
+
+<small>Car Owner</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="review-card reveal">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+
+"One of the best car wash experiences I've had.
+Great quality, reasonable pricing and excellent customer
+service."
+
+</p>
+
+
+<div class="reviewer">
+
+<div class="avatar">S</div>
+
+<div>
+
+<strong>Saad Ahmed</strong>
+
+<small>Happy Customer</small>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box reveal">
+
+<h2>
+Ready To Make Your Car Shine?
+</h2>
+
+<p>
+
+Give your vehicle the care it deserves.
+Book your next wash with HK Carwash today.
+
+</p>
+
+
+<a href="#contact" class="btn">
+
+Book Now
+
+<i class="fa-solid fa-calendar-check"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+
+<div class="section-title reveal">
+
+<span>Get In Touch</span>
+
+<h2>Book Your Car Wash</h2>
+
+<p>
+
+Fill out the form and our team will contact you.
+
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-info reveal">
+
+<h2>
+
+Let's Get Your<br>
+
+Car <span style="color:#D4AF37">
+Shining.
+</span>
+
+</h2>
+
+
+<p>
+
+Have a question or want to book a service?
+Contact HK Carwash and our team will be happy to help.
+
+</p>
+
+
+<div class="contact-item">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<div>
+
+<strong>Our Location</strong>
+
+<span>Your City, Pakistan</span>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<div>
+
+<strong>WhatsApp</strong>
+
+<span>+92 300 1234567</span>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<i class="fa-solid fa-phone"></i>
+
+<div>
+
+<strong>Phone</strong>
+
+<span>+92 300 1234567</span>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<i class="fa-solid fa-clock"></i>
+
+<div>
+
+<strong>Opening Hours</strong>
+
+<span>Every Day • 8:00 AM – 10:00 PM</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<form class="contact-form reveal" id="bookingForm">
+
+
+<div class="form-row">
+
+<div class="input-group">
+
+<label>Your Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="03XX XXXXXXX"
+required>
+
+</div>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Select Service</label>
+
+<select id="service">
+
+<option>Premium Car Wash</option>
+<option>Full Detailing</option>
+<option>Polishing & Wax</option>
+<option>Interior Cleaning</option>
+<option>Wheel & Tyre Care</option>
+<option>Paint Protection</option>
+
+</select>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Message</label>
+
+<textarea
+id="message"
+placeholder="Tell us about your car or service you need..."></textarea>
+
+</div>
+
+
+<button type="submit" class="btn">
+
+Send Booking Request
+
+<i class="fa-solid fa-paper-plane"></i>
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+
+<a href="#home" class="logo">
+
+<div class="logo-icon">
+
+<i class="fa-solid fa-car-side"></i>
+
+</div>
+
+HK <span>CARWASH</span>
+
+</a>
+
+
+<p>
+
+Premium car washing and detailing for people who
+expect their vehicle to look its absolute best.
+
+</p>
+
+
+<div class="socials">
+
+<a href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Quick Links</h4>
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#products">Products</a>
+<a href="#reviews">Reviews</a>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Services</h4>
+
+<a href="#services">Car Wash</a>
+<a href="#services">Full Detailing</a>
+<a href="#services">Interior Cleaning</a>
+<a href="#services">Polishing</a>
+<a href="#services">Paint Protection</a>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<a href="#">Your City, Pakistan</a>
+
+<a href="tel:+923001234567">
++92 300 1234567
+</a>
+
+<a href="mailto:info@hkcarwash.com">
+info@hkcarwash.com
+</a>
+
+<a href="#contact">
+Book Appointment
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 HK Carwash. All Rights Reserved.
+
+<br>
+
+Premium Car Care • Built With Passion
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a
+href="https://wa.me/923001234567?text=Hello%20HK%20Carwash,%20I%20want%20to%20book%20a%20car%20wash."
+class="whatsapp"
+target="_blank"
+aria-label="Chat on WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<span class="whatsapp-tooltip">
+Chat with HK Carwash
+</span>
+
+</a>
+
+
+
+<!-- =====================================================
+     CHATBOT
+===================================================== -->
+
+<div class="chat-button" id="chatButton">
+
+<i class="fa-solid fa-message"></i>
+
+</div>
+
+
+<div class="chat-box" id="chatBox">
+
+
+<div class="chat-header">
+
+<strong>
+
+<i class="fa-solid fa-robot"></i>
+
+HK Carwash Assistant
+
+</strong>
+
+
+<span class="chat-close" id="chatClose">
+
+<i class="fa-solid fa-xmark"></i>
+
+</span>
+
+</div>
+
+
+<div class="chat-messages" id="chatMessages">
+
+<div class="message bot">
+
+👋 Hi! Welcome to HK Carwash.
+How can I help you today?
+
+</div>
+
+
+<div class="message bot">
+
+You can ask about our services,
+prices, booking or opening hours.
+
+</div>
+
+</div>
+
+
+<div class="chat-input">
+
+<input
+type="text"
+id="chatInput"
+placeholder="Type your message...">
+
+<button id="sendChat">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* NAVBAR */
+
+const header =
+document.getElementById("header");
+
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY > 50){
+
+        header.classList.add("scrolled");
+
+    }else{
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
+
+
+/* MOBILE MENU */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+menuBtn.addEventListener("click",()=>{
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+document.querySelectorAll(".nav-links a")
+.forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+
+/* SCROLL REVEAL */
+
+const observer =
+new IntersectionObserver(
+
+(entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},
+
+{
+    threshold:.12
+}
+
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(el=>{
+
+    observer.observe(el);
+
+});
+
+
+/* BOOKING FORM */
+
+const bookingForm =
+document.getElementById("bookingForm");
+
+
+bookingForm.addEventListener("submit",(e)=>{
+
+    e.preventDefault();
+
+
+    const name =
+    document.getElementById("name").value;
+
+    const phone =
+    document.getElementById("phone").value;
+
+    const service =
+    document.getElementById("service").value;
+
+    const message =
+    document.getElementById("message").value;
+
+
+    /* CHANGE THIS NUMBER */
+
+    const whatsappNumber =
+    "923001234567";
+
+
+    const text =
+
+`Hello HK Carwash! 🚗
+
+I want to book a service.
+
+Name: ${name}
+
+Phone: ${phone}
+
+Service: ${service}
+
+Message: ${message}`;
+
+
+    const url =
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+
+    window.open(url,"_blank");
+
+});
+
+
+/* CHATBOT */
+
+const chatButton =
+document.getElementById("chatButton");
+
+const chatBox =
+document.getElementById("chatBox");
+
+const chatClose =
+document.getElementById("chatClose");
+
+const chatInput =
+document.getElementById("chatInput");
+
+const sendChat =
+document.getElementById("sendChat");
+
+const chatMessages =
+document.getElementById("chatMessages");
+
+
+chatButton.addEventListener("click",()=>{
+
+    chatBox.classList.toggle("active");
+
+});
+
+
+chatClose.addEventListener("click",()=>{
+
+    chatBox.classList.remove("active");
+
+});
+
+
+function addMessage(text,type){
+
+    const message =
+    document.createElement("div");
+
+    message.classList.add(
+        "message",
+        type
+    );
+
+    message.innerText=text;
+
+    chatMessages.appendChild(message);
+
+    chatMessages.scrollTop =
+    chatMessages.scrollHeight;
+
+}
+
+
+function botReply(text){
+
+    text =
+    text.toLowerCase();
+
+
+    let reply="";
+
+
+    if(
+        text.includes("price") ||
+        text.includes("cost") ||
+        text.includes("rate")
+    ){
+
+        reply =
+        "Our Premium Car Wash starts from PKR 1,000. Full detailing starts from PKR 3,500. For an exact quote, contact us on WhatsApp.";
+
+    }
+
+
+    else if(
+        text.includes("service") ||
+        text.includes("wash") ||
+        text.includes("detail")
+    ){
+
+        reply =
+        "We offer Premium Car Wash, Full Detailing, Interior Cleaning, Polishing & Wax, Wheel & Tyre Care and Paint Protection.";
+
+    }
+
+
+    else if(
+        text.includes("time") ||
+        text.includes("open") ||
+        text.includes("hour")
+    ){
+
+        reply =
+        "We're open every day from 8:00 AM to 10:00 PM.";
+
+    }
+
+
+    else if(
+        text.includes("book") ||
+        text.includes("appointment")
+    ){
+
+        reply =
+        "Great! You can use the booking form on this page or message us directly on WhatsApp.";
+
+    }
+
+
+    else if(
+        text.includes("location") ||
+        text.includes("where")
+    ){
+
+        reply =
+        "We're located in Your City, Pakistan. Contact us for the exact location.";
+
+    }
+
+
+    else{
+
+        reply =
+        "I'd be happy to help! Ask me about our services, prices, opening hours or booking.";
+
+    }
+
+
+    setTimeout(()=>{
+
+        addMessage(reply,"bot");
+
+    },600);
+
+}
+
+
+function sendMessage(){
+
+    const text =
+    chatInput.value.trim();
+
+
+    if(!text) return;
+
+
+    addMessage(text,"user");
+
+
+    chatInput.value="";
+
+
+    botReply(text);
+
+}
+
+
+sendChat.addEventListener(
+    "click",
+    sendMessage
+);
+
+
+chatInput.addEventListener(
+    "keypress",
+    (e)=>{
+
+        if(e.key==="Enter"){
+
+            sendMessage();
+
+        }
+
+    }
+);
+
+
+/* ACTIVE NAVIGATION */
+
+const sections =
+document.querySelectorAll(
+    "section[id]"
+);
+
+
+window.addEventListener(
+    "scroll",
+    ()=>{
+
+        let current="";
+
+
+        sections.forEach(section=>{
+
+            const sectionTop =
+            section.offsetTop - 150;
+
+
+            if(
+                window.scrollY >= sectionTop
+            ){
+
+                current =
+                section.getAttribute("id");
+
+            }
+
+        });
+
+
+        document
+        .querySelectorAll(".nav-links a")
+        .forEach(link=>{
+
+            link.style.color="";
+
+
+            if(
+                link.getAttribute("href")
+                === "#" + current
+            ){
+
+                link.style.color =
+                "#D4AF37";
+
+            }
+
+        });
+
+    }
+);
+
+</script>
+
+</body>
+</html>
